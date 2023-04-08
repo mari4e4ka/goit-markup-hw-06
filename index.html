@@ -64,6 +64,26 @@
             <div class="backdrop is-hidden" data-modal>
               <div class="modal">
                 <button class="button-close" data-modal-close></button>
+                <form class="main-form">
+                  <p class="main-form-title">Залиште свої дані, ми вам передзвонимо</p>
+                  <label for="name">Ім'я</label>
+                  <input type="text" name="name" id="name">
+
+                  <label for="tel">Телефон</label>
+                  <input type="tel" name="tel" id="tel">  
+
+                  <label for="mail">Пошта</label>
+                  <input type="email" name="email" id="mail">
+
+                  <label for="coment">Коментар</label>
+                  <textarea name="coment" id="coment" placeholder="Введіть текст"></textarea>
+
+                  <input type="checkbox" name="agreement" id="agreement">
+                  <label for="agreement">Погоджуюся з розсилкою та приймаю <a href="" class="agreement-link"><span class="accent">Умови договору</span></a></label>
+
+                  <button type="submit" class="button primary">Відправити</button>
+
+                </form>
               </div>
             </div>
             <button class="button primary" data-modal-open>
@@ -435,8 +455,7 @@
               </li>
             </ul>
           </div>
-          <div class="subscribe">
-            <form>
+          <form class="subscribe">
               <label for="email" class="subscribe-item">Підпишіться на розсилку</label>
               <input type="email" name="email" id="email" placeholder="E-mail">
               <button type="submit" class="button primary">
@@ -444,10 +463,8 @@
                 <svg class="icon-send">
                   <use href="./images/sprite.svg#icon-send"></use>
                 </svg>
-
               </button>
-            </form>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
