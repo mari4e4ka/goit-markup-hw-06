@@ -146,7 +146,8 @@ header .logo {
   text-decoration: none;
   color: var(--main-text-color);
   fill: var(--main-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 header .contact-item {
@@ -225,14 +226,17 @@ header .contact-item {
   border: 0;
   border-radius: 4px;
   padding: 10px 24px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button.primary:hover,
 .button.primary:focus {
   background-color: var(--primary-bgc);
   color: var(--accent-color);
-  box-shadow: 0px 10px 13px -7px #000000, inset 5px 5px 15px 5px rgba(0,0,0,0);
+  box-shadow: 0px 10px 13px -7px #000000,
+    inset 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 .button.secondary {
@@ -246,20 +250,24 @@ header .contact-item {
   border: 0;
   border-radius: 4px;
   padding: 6px 22px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button.secondary:hover,
 .button.secondary:focus {
   background-color: var(--accent-color);
   color: var(--primary-bgc);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button.secondary.actual {
   background-color: var(--accent-color);
   color: var(--primary-bgc);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .backdrop {
@@ -470,7 +478,8 @@ header .contact-item {
   height: 44px;
   border-radius: 50%;
   background-color: var(--primary-bgc);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .smlist-item:not(:last-child) {
@@ -521,7 +530,8 @@ header .contact-item {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: var(--sm-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),   border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -549,6 +559,7 @@ header .contact-item {
 .footer.list {
   padding-top: 60px;
   padding-bottom: 60px;
+  width: 231px;
 }
 
 footer .logo {
@@ -606,6 +617,67 @@ footer .item:hover,
   margin: 12px;
 }
 
+.subscribe {
+  width: 570px;
+  height: 86px;
+  margin-top: 72px;
+  margin-left: 94px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-bgc);
+}
+
+.subscribe-item {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.subscribe .button.primary {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  padding: 10px 28px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+
+#email {
+  width: 358px;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+
+  color: var(--primary-bgc);
+  background-color: #2F303A;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.icon-send {
+  position: absolute;
+  top: 12px;
+  right: 28px;
+  width: 24px;
+  height: 24px;
+
+  fill: var(--primary-bgc);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe .button.primary:hover .icon-send {
+  fill: var(--accent-color);
+}
+
 /* Portfolio */
 .nav {
   display: flex;
@@ -616,7 +688,6 @@ footer .item:hover,
 .nav .item:not(:last-child) {
   margin-right: 8px;
 }
-
 
 .exemples .list {
   display: flex;
@@ -634,7 +705,7 @@ footer .item:hover,
 
   background: var(--primary-bgc);
   border: 1px solid #eeeeee;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .exemples .item:hover,
