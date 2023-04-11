@@ -66,21 +66,39 @@
                 <button class="button-close" data-modal-close></button>
                 <form class="main-form">
                   <p class="main-form-title">Залиште свої дані, ми вам передзвонимо</p>
-                  <label for="name">Ім'я</label>
-                  <input type="text" name="name" id="name">
-
-                  <label for="tel">Телефон</label>
-                  <input type="tel" name="tel" id="tel">  
-
-                  <label for="mail">Пошта</label>
-                  <input type="email" name="email" id="mail">
+                  <div class="main-form-item">
+                    <label for="name">Ім'я</label>
+                    <input type="text" name="name" id="name">
+                    <svg class="main-form-icon">
+                      <use href="./images/sprite-form.svg#icon-person-form"></use>
+                    </svg>
+                  </div>
+                  <div class="main-form-item">
+                    <label for="tel">Телефон</label>
+                    <input type="tel" name="tel" id="tel">
+                    <svg class="main-form-icon">
+                      <use href="./images/sprite-form.svg#icon-phone-form"></use>
+                    </svg> 
+                  </div> 
+                  <div class="main-form-item">
+                    <label for="mail">Пошта</label>
+                    <input type="email" name="email" id="mail">
+                    <svg class="main-form-icon">
+                      <use href="./images/sprite-form.svg#icon-email-form"></use>
+                    </svg>
+                  </div>
 
                   <label for="coment">Коментар</label>
                   <textarea name="coment" id="coment" placeholder="Введіть текст"></textarea>
 
-                  <input type="checkbox" name="agreement" id="agreement">
-                  <label for="agreement">Погоджуюся з розсилкою та приймаю <a href="" class="agreement-link"><span class="accent">Умови договору</span></a></label>
-
+                  <div class="agreement-thumb">
+                    <svg class="icon-agreement">
+                      <use href="./images/sprite-form.svg#icon-agreement"></use>
+                    </svg>
+  
+                    <label for="agreement">Погоджуюся з розсилкою та приймаю <a href="" class="agreement-link"><span class="accent">Умови договору</span></a></label>
+                  </div>
+                  
                   <button type="submit" class="button primary">Відправити</button>
 
                 </form>
