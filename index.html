@@ -64,12 +64,12 @@
             <div class="backdrop is-hidden" data-modal>
               <div class="modal">
                 <button class="button-close" data-modal-close></button>
-                 <form class="main-form">
+                 <form class="main-form" autocomplete="off">
                   <p class="main-form-title">Залиште свої дані, ми вам передзвонимо</p>
                   <div class="main-form-item">
                     <label class="main-form-label">
                       Ім'я
-                      <input type="text" name="name" class="main-form-input">
+                      <input type="text" name="name" class="main-form-input" placeholder=" " required>
                       <svg class="main-form-icon">
                         <use href="./images/sprite-form.svg#icon-person-form"></use>
                       </svg>
@@ -78,7 +78,7 @@
                   <div class="main-form-item">
                     <label class="main-form-label">
                       Телефон
-                      <input type="tel" name="" class="main-form-input">
+                      <input type="tel" name="phone" class="main-form-input" placeholder=" " required>
                       <svg class="main-form-icon">
                         <use href="./images/sprite-form.svg#icon-phone-form"></use>
                       </svg>
@@ -87,7 +87,7 @@
                   <div class="main-form-item">
                     <label class="main-form-label">
                       Пошта
-                      <input type="email" name="name" class="main-form-input">
+                      <input type="email" name="mail" class="main-form-input" placeholder=" " required>
                       <svg class="main-form-icon">
                         <use href="./images/sprite-form.svg#icon-email-form"></use>
                       </svg>
